@@ -1,59 +1,180 @@
-.main{
-    display: flex;
-    width: 1283px;
-    height: 39px;
-    margin-top: 76px;
-    margin-left: 63px;
-    padding-right: 20px;
-    padding-left: 20px;
-    gap: 124px;
-    justify-content: space-around;
-    font-size: 30px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
 }
-.name{
-    
-    margin-top: 50px;
-    margin-left: 610px;
-    font-weight: 700px;
-    size: 64px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    font-size: 60px;
-}
-.title{
-    display: flex;
-    justify-content: space-around;
-    color: white;
-   
-
+.header{
+    width: 1440px;
+    margin: 0 auto;
+    padding: 0 130px;
 
 }
-
-.box{
-    display: flex;
-    width: 498px;
-    height: 392px;
-    border: 2px solid red;
-    background-color: red; 
+/* .header:hover{
+    background-color: yellow; */
 }
-.time{
-    text-align: center;
-    align-content: center;
-    color: white;
-    padding-left: 180px;
-    font-size: 60px;
-}
-.bottom{
+.nav{
+    width: 100%;
     display: flex;
-    width: 1283px;
-    height: 39px;
-    margin-top: 76px;
-    margin-left: 63px;
-    padding-right: 20px;
-    padding-left: 20px;
-    gap: 124px;
+    align-items: center;
     justify-content: space-between;
-    font-size: 30px;
+    
+}
 
-}  
+.nav ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+}
+.nav ul li{
+    font-size: 18px;
+    font-weight: 400px;
+    color: black;
+    opacity: 0.5;
+
+}
+/* . nav ul list-style:hover{
+color: red;
+font-weight: 700px;
+opacity: 1;
+transition: all;
+} */
+.nav ul li:hover{
+    color: red;
+    font-weight: 700;
+    opacity: 1;
+    transition: all 1s ;
+}
+.header-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-content_text{
+    width: 440px;
+}
+.header-content_text h1{
+    font-size: 45px ;
+    font-weight: 700;
+    line-height: 56px ;
+    margin-bottom:26px ;
+}
+.header-content_text p{
+    font-size:19px ;
+    font-weight: 300;
+    line-height: 32px ;
+    color: #7D7987;
+    margin-bottom:35px ;
+}
+.btn{
+    width: 200px;
+    height: 50px;
+    border-radius: 55px;
+    background-color: #458FF6;
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+    border: none;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #fff;
+}
+
+.services {
+    max-width: 1180px;
+    margin: 50px auto;
+    padding: 40px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+.subtitle {
+    color: #7d7d7d;
+    font-size: 14px;
+    max-width: 750px;
+    margin: 0 auto 50px;
+    line-height: 1.6;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card {
+    background: #f2f2f2;
+    border-radius: 16px;
+    padding: 30px;
+    text-align: left;
+    transition: 0.3s;
+    width: 380px;
+    height: 380px;
+    
+}
+
+.card .icon {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #3f8cff;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #7d7d7d;
+    line-height: 1.5;
+}
+
+/* Active / Hover card */
+.card:hover,
+.card.active {
+    background: #3f8cff;
+    color: #fff;
+}
+
+.card:hover p,
+.card.active p {
+    color: #e6e6e6;
+}
+
+.card:hover .icon,
+.card.active .icon {
+    color: #fff;
+}
+
+.learn-more {
+    margin-top: 50px;
+    padding: 12px 36px;
+    background: transparent;
+    border: 1px solid #3f8cff;
+    color: #3f8cff;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.learn-more:hover {
+    background: #3f8cff;
+    color: #fff;
+}
+
 
